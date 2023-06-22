@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+   
+    <meta name="description" content="Web oficial del Club Champagnat. Todas las noticias relacionadas con el champa, venta de entradas, servicios al socio y las personas e información sobre el club">
+    
+    <meta name="keywords" content="rugby, hockey, handball, basquetball, gimnasio, disfrute, champagnat, montevideo, deporte, salud, socios, unidad, campamento, cultura, jovenes, asociación, noticias, fotos, novedades, eventos, publicaciones, descubri, horarios, actividades, recreativas, trabajo, oportunidades, uruguay, alma, mente, cuerpo, todos, lugar">
+    
+    <link rel="shortcut icon" href="../imagenes/91046109_2981594358586777_4654779993698598912_n.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../java/js.js"></script>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Club champagnat</title>
+</head>
+  <body>
+    <div class="contenedor">
+        <header>
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">@CLUB CHAMPAGNAT</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="./index.html">INICIO</a>
+                  <a class="nav-link" href="./html/actividades.html">ACTIVIDADES</a>
+                  <a class="nav-link" href="./html/gimnasio.html">GIMNASIO</a>
+                  <a class="nav-link" href="#" >SOCIOS</a>
+                  <a class="nav-link" href="#" >DEPORTES</a>
+                  <a class="nav-link" href="./html/productos.html" >PRODUCTOS</a>
+                  <a class="nav-link" href="./html/contacto.html" >CONTACTO</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <img src="../imagenes/50487715_2178055632273991_2081793123935059968_n.jpg" alt="club champagnat soy mi club logo" class="imagengrande">
+        </header>
+      
+        
+    <div class="container2">
+      <h1>Tienda del club</h1>
+
+      <div class="section">
+        <h2>Agregar Producto</h2>
+        <form id="formulario">
+          <div class="form-group">
+            <label for="product-name">Nombre del Producto:</label>
+            <input type="text" id="name" name="product-name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="product-price">Precio del Producto:</label>
+            <input type="number" id="price" name="price" required />
+          </div>
+
+          <div class="form-group">
+            <label for="product-description">Descripción del Producto:</label>
+            <textarea
+              id="description"
+              name="product-description"
+              required
+            ></textarea>
+          </div>
+
+          <input
+            type="submit"
+            id="btnAddProduct"
+            value="Agregar Producto"
+            class="btn-primary"
+          />
+        </form>
+      </div>
+
+      <div class="section">
+        <h2>Agregar otro producto</h2>
+        <form id="sellProduct">
+          <div class="form-group">
+            <label for="product-select">Selecciona un Producto:</label>
+            <select id="productSelect" name="productSelect" required>
+              <option value="" disabled selected>Seleccione un producto</option>
+            
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="customer-name">Nombre:</label>
+            <input
+              type="text"
+              id="customerName"
+              name="customer-name"
+              required
+            />
+          </div>
+
+          <input type="submit" value="comprar Producto" class="btn-primary" />
+        </form>
+      </div>
+      
+      
+
+      <div class="section">
+        <h2>Productos Disponibles</h2>
+        <div id="productList" class="product-grid">
+        
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@2.3.0/build/global/luxon.min.js"></script>
+
+    <script src="js.js"></script>
+  </body>
+  <footer>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1426.6214457262029!2d-56.15647784420995!3d-34.926242578094744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f8178ff11dbd5%3A0xc14584e0e93c34e0!2sClub%20Champagnat%20de%20Rugby!5e0!3m2!1ses-419!2suy!4v1674773746032!5m2!1ses-419!2suy" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <h2>LINKS</h2>
+    <ul class="links">
+      <li><a href="http://uru.org.uy/">Union de rugby del uruguay</a></li>
+      <li><a href="https://www.worldrugby.org/">World Rugby</a></li>
+      <li><a href="https://www.worldrugby.org/sevens-series/">Serie HSBC sevens</a></li>
+      <li><a href="http://www.rugbyworldcup.com/">Copa del mundo de rugby</a></li>
+    </ul>
+    <a href="https://www.facebook.com/champagnatclub/" target="_blank"><img src="./imagenes/OIP.jpg" alt=""></a>
+    <a href="https://www.instagram.com/champagnatclub/" target="_blank"><img src="./imagenes/th (1).jpg" alt=""></a>
+    <a href="https://twitter.com/champagnatclub" target="_blank"><img src="./imagenes/th.jpg" alt=""></a>
+  </footer>
+</html>

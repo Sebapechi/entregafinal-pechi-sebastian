@@ -1,0 +1,282 @@
+ header {
+    background-color: black;
+    background-size: cover;
+    flex-direction: row;
+  }
+ 
+
+  body {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    background-image: url(../imagenes/bg.jpg);
+    background-size: cover;
+    column-gap: 20px;
+    text-decoration: white solid;
+  }
+
+  footer {
+    background-color: lightgray;
+    background-size: cover;
+  }
+
+  #productos-main {
+    margin-top: 50px;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-areas: 
+    "img1 img2 img3" 
+    "text1 text2 text3" 
+    "img4 img5 img6" 
+    "text4 text5 text6";
+    column-gap: 150px;
+    row-gap: 50px;
+  }
+  
+  #productos-main div:nth-child(1) {
+    grid-area: img1;
+  }
+  
+  #productos-main div:nth-child(2) {
+    grid-area: text1;
+  }
+  
+  #productos-main div:nth-child(3) {
+    grid-area: img2;
+  }
+  
+  #productos-main div:nth-child(4) {
+    grid-area: text2;
+  }
+  
+  #productos-main div:nth-child(5) {
+    grid-area: img3;
+  }
+  
+  #productos-main div:nth-child(6) {
+    grid-area: text3;
+  }
+  
+  #productos-main div:nth-child(7) {
+    grid-area: img4;
+  }
+  
+  #productos-main div:nth-child(8) {
+    grid-area: text4;
+  }
+  
+  #productos-main div:nth-child(9) {
+    grid-area: img5;
+  }
+
+  #productos-main div:nth-child(10) {
+    grid-area: text5;
+  }
+
+  #productos-main div:nth-child(11) {
+    grid-area: img6;
+  }
+  
+
+  #productos-main div:nth-child(12) {
+    grid-area: text6;
+  }
+  
+
+  
+  
+  main img {
+    width: 300px;
+    height: 300px;
+    border: 5px;
+  }
+
+  .i1{
+    width: 350px;
+    height: 350px;
+  }
+
+  .i2{
+    width: 350px;
+    height: 350px;
+  }
+  
+  .i3{
+    width: 350px;
+    height: 350px;
+  }
+  
+  .i4{
+    width: 350px;
+    height: 350px;
+  }
+
+  .i5{
+    width: 350px;
+    height: 350px;
+  }
+
+  .i6{
+    width: 350px;
+    height: 350px;
+  }
+
+  main a{
+    color: white;
+    text-decoration: double;  
+  }
+
+  .contenedor {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  header img {
+    width: 100%;
+    height: auto;
+  }
+  
+  main img {
+    width: 70%;
+    height: auto;
+  }
+  
+  section {
+    width: 100%;
+    height: auto;
+  }
+  
+  @media screen and (max-width: 800px) {
+    main {
+      width: 100%;
+    }
+    section {
+      width: 100%;
+    }
+  }
+  footer {
+    margin-top: 100px;
+    width: 100%;
+    height: 25%;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+  }
+  
+  .container2 {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 0;
+  }
+  
+  .section {
+    margin-bottom: 30px;
+  }
+  
+  h2 {
+    margin-top: 0;
+    font-size: 24px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+  }
+  
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+    background-color: #fff;
+  }
+  
+  input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    cursor: pointer;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  
+  
+  .product-card {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .product-card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .product-card .product-name {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .product-card .product-price {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .product-card .product-description {
+    font-size: 14px;
+  }
+  
+  .product-card button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    cursor: pointer;
+  }
